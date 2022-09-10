@@ -22,33 +22,31 @@ int main(void)
 
 {
 
-	char low;
-
-	char row;
+	int low;
 
 
 
-	row = 'a';
-
-	for (low = 0; low < 10; low++)
+	for (low = 0; low <= 9; low++)
 
 	{
 
 		putchar(low + '0');
 
-	}
+		if (low < 9)
 
-	for (low = 10; low <= 15; low++)
+		{
 
-	{
+			putchar(',');
 
-		putchar(row);
+			putchar(' ');
 
-		row++;
+		}
 
 	}
 
 	putchar('\n');
+
+
 
 	return (0);
 
